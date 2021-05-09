@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net472</TargetFramework>
+        <LangVersion>latest</LangVersion>
+        <Version>0.1</Version>
+        <Authors>nonce-twice</Authors>
+        <Product />
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+      <WarningLevel>4</WarningLevel>
+      <OutputPath>$(MsBuildThisFileDirectory)\Output\Debug\</OutputPath>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+      <OutputPath>$(MsBuildThisFileDirectory)\Output\Release\</OutputPath>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Reference Include="Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <SpecificVersion>false</SpecificVersion>
+        <Private>false</Private>
+        <HintPath>$(MsBuildThisFileDirectory)\..\Libs\Assembly-CSharp.dll</HintPath>
+      </Reference>
+      <Reference Include="VRCSDKBase, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <SpecificVersion>false</SpecificVersion>
+        <Private>false</Private>
+        <HintPath>$(MsBuildThisFileDirectory)\..\Libs\VRCSDKBase.dll</HintPath>
+      </Reference>
+      <Reference Include="UIExpansionKit, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <SpecificVersion>false</SpecificVersion>
+        <Private>false</Private>
+        <HintPath>$(MsBuildThisFileDirectory)\..\Libs\UIExpansionKit.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+</Project>
